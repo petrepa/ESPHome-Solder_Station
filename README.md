@@ -16,6 +16,7 @@ Whats connected to my station:
 1. Soldering Iron
 2. Soldering Fan
 3. Glue Gun
+4. _Not anything particulary at the moment_
 
 The glue gun has its own stand 
 
