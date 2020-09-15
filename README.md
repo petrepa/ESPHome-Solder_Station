@@ -1,5 +1,5 @@
 # ESPHome Solder Station
-### This is a porly documented project, I am sorry for that, but I think the idea and the practicallity of such a setup is to good to not be shared
+### This is a poorly documented project, I am sorry for that, but I think the idea and the practicallity of such a setup is to good to not be shared
 
 This projects gives you four schuko sockets you can controll though [Home Assistant](https://home-assistant.io) with [ESPHome](https://esphome.io/). 
 
