@@ -7,6 +7,8 @@ This projects gives you four schuko sockets you can controll though [Home Assist
 
 In addition to power controll, you have a DHT sensor for temperature and humidity, and a binary indication for whether or not the soldering iron is docked in it's stand.
 
+![collage](https://github.com/petrepa/ESPHome-Solder_Station/blob/master/Images/collage.jpg)
+
 This enables us to make nifty automations making the use of the soldering station feel more exclusive. 
 
 This happens when I deploy the soldering iron from its stand:
