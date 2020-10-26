@@ -1,0 +1,73 @@
+esphome:
+  name: office_solder_station
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: !secret wifi_not_ssid
+  password: !secret wifi_not_pwd
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+sensor:
+  - platform: wifi_signal
+    name: Office Solder Station WiFi Signal
+    update_interval: 10s
+  - platform: uptime
+    name: Office Solder Station Uptime
+  - platform: dht
+    pin: GPIO25
+    model: DHT22
+    temperature:
+      name: "Office Solder Station Temperature"
+    humidity:
+      name: "Office Solder Station Humidity"
+    update_interval: 60s
+    
+switch:
+  - platform: gpio
+    id: relay_1
+    name: "Office Solder Station Iron"
+    pin:
+      number: GPIO19
+      inverted: yes
+  - platform: gpio
+    id: relay_2
+    name: "Office Solder Station Glue Gun"
+    pin:
+      number: GPIO18
+      inverted: yes
+  - platform: gpio
+    id: relay_3
+    name: "Office Solder Station Fan"
+    pin:
+      number: GPIO5
+      inverted: yes
+  - platform: gpio
+    id: relay_4
+    name: "Office Solder Station Spare Plug"
+    pin:
+      number: GPIO17
+      inverted: yes
+  - platform: restart
+    name: "Office Solder Station Restart"
+
+binary_sensor:
+  - platform: gpio
+    pin: 
+      number: GPIO26
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "Office Solder Station Glue Gun Docked"
+  - platform: gpio
+    pin: 
+      number: GPIO21
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "Office Solder Station Iron Docked"
