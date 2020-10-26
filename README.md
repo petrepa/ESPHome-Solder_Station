@@ -1,6 +1,8 @@
 # ESPHome Solder Station
 ### This is a poorly documented project, I am sorry for that, but I think the idea and the practicallity of such a setup is to good to not be shared
 
+![iron_deployed](https://github.com/petrepa/ESPHome-Solder_Station/blob/master/Images/iron_deploy.gif)
+
 This projects gives you four schuko sockets you can controll though [Home Assistant](https://home-assistant.io) with [ESPHome](https://esphome.io/). 
 
 In addition to power controll, you have a DHT sensor for temperature and humidity, and a binary indication for whether or not the soldering iron is docked in it's stand.
