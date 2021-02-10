@@ -30,6 +30,6 @@ Using a NODEMCU-32S since it has a lot of digital GPIO.
 Main concepts:
 - The shucko sockets are connected to a four channel [relay breakoutboard](https://esphome.io/cookbook/relay.html?highlight=relay)
 - [DHT sensor](https://esphome.io/components/sensor/dht.html?highlight=dht) connected to GPIO ports. Remember the resistor!
-- The soldering iron have a wire screwed into it. This wire is connected to one of the MCUs [GPIO pins](https://esphome.io/components/binary_sensor/gpio.html?highlight=gpio), while the MCUs ground is connected to earth. Since the iron is connected to earth through the soldering station, the GPIO pin will be pulled to the earth when the iron is docked, and this can be read out binary from the pin.
+- The soldering iron dock have a wire screwed into it. This wire is connected to one of the MCUs [GPIO pins](https://esphome.io/components/binary_sensor/gpio.html?highlight=gpio), while the MCUs ground is connected to earth. Since the iron is connected to earth through the soldering station, the GPIO pin will be pulled to the earth when the iron is docked, and this can be read out binary from the pin.
 - Using a USB wall adapter to provide 5V to the MCU and relay breakout board from 230V. This enables you to only connect the entire box to the wall using one power cord.
 - Glue Gun with it's [own stand](https://www.thingiverse.com/thing:4578044) and an embedded push button which tells if the gun is docked or not. Using [GPIO pins](https://esphome.io/components/binary_sensor/gpio.html?highlight=gpio). 
