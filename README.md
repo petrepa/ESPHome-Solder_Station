@@ -1,5 +1,5 @@
 # ESPHome Solder Station
-### This is a poorly documented project, I am sorry for that, but I think the idea and the practicallity of such a setup is to good to not be shared
+### This is a poorly documented project, I am sorry for that, but I think the idea and the practicallity of such a setup is too good to not be shared
 
 ![iron_deployed](https://github.com/petrepa/ESPHome-Solder_Station/blob/master/Images/iron_deploy.gif)
 
